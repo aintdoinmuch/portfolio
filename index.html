@@ -56,7 +56,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
       
       <!-- Brand Logo -->
-      <a href="#home" class="flex items-center gap-3 group">
+      <a href="#about" class="flex items-center gap-3 group">
         <div class="w-11 h-11 rounded-xl bg-gradient-to-tr from-indigo-600 via-indigo-500 to-cyan-400 p-[1.5px] shadow-lg shadow-indigo-500/20 group-hover:scale-105 transition-transform duration-300">
           <div class="w-full h-full bg-[#090d16] rounded-[10px] flex items-center justify-center">
             <span class="font-extrabold text-lg gradient-text font-mono">NG</span>
@@ -71,9 +71,8 @@
         </div>
       </a>
 
-      <!-- Desktop Nav Links -->
+      <!-- Desktop Nav Links (No empty Home link) -->
       <nav class="hidden md:flex items-center gap-1 theme-card-bg p-1.5 rounded-full border theme-border backdrop-blur-md">
-        <a href="#home" class="desktop-nav-link theme-subtext hover:text-indigo-500 px-4 py-2 rounded-full text-sm font-medium transition-colors">Home</a>
         <a href="#about" class="desktop-nav-link theme-subtext hover:text-indigo-500 px-4 py-2 rounded-full text-sm font-medium transition-colors">About</a>
         <a href="#education" class="desktop-nav-link theme-subtext hover:text-indigo-500 px-4 py-2 rounded-full text-sm font-medium transition-colors">Education</a>
         <a href="#skills" class="desktop-nav-link theme-subtext hover:text-indigo-500 px-4 py-2 rounded-full text-sm font-medium transition-colors">Skills</a>
@@ -105,7 +104,6 @@
     <!-- Mobile Dropdown Menu -->
     <div id="mobile-menu" class="hidden md:hidden px-4 pt-2 pb-6 theme-card-bg border-b theme-border backdrop-blur-xl">
       <div class="flex flex-col space-y-2 pt-2">
-        <a href="#home" class="mobile-nav-link px-4 py-2.5 rounded-lg theme-subtext hover:theme-heading hover:bg-indigo-500/10 font-medium">Home</a>
         <a href="#about" class="mobile-nav-link px-4 py-2.5 rounded-lg theme-subtext hover:theme-heading hover:bg-indigo-500/10 font-medium">About</a>
         <a href="#education" class="mobile-nav-link px-4 py-2.5 rounded-lg theme-subtext hover:theme-heading hover:bg-indigo-500/10 font-medium">Education</a>
         <a href="#skills" class="mobile-nav-link px-4 py-2.5 rounded-lg theme-subtext hover:theme-heading hover:bg-indigo-500/10 font-medium">Skills</a>
@@ -118,14 +116,15 @@
   <!-- Main Content Container -->
   <main class="relative z-10 pt-28">
 
-    <!-- 1. HERO SECTION -->
-    <section id="home" class="min-h-[90vh] flex items-center py-12 md:py-20">
+    <!-- 1. UNIFIED PRIMARY SECTION: ABOUT NAMAN GARG -->
+    <section id="about" class="min-h-[85vh] py-12 md:py-20 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Hero Header with Name & Animated Headline -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center mb-16">
           
-          <!-- Left Column: Hero Copy & CTAs -->
-          <div class="lg:col-span-7 space-y-7 text-left">
+          <!-- Left Column: Copy & CTAs -->
+          <div class="lg:col-span-7 space-y-6 text-left">
             
             <!-- Status Pill -->
             <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full theme-badge backdrop-blur-md shadow-sm">
@@ -150,10 +149,10 @@
               <span class="w-2 h-6 bg-cyan-400 animate-pulse inline-block"></span>
             </div>
 
-            <!-- Subtitle description -->
+            <!-- Subtitle description & Direct quote -->
             <p class="text-base sm:text-lg theme-subtext max-w-2xl leading-relaxed">
               B.Tech student at <span class="theme-heading font-semibold underline decoration-indigo-500 decoration-2 underline-offset-4">JECRC University, Jaipur</span>. 
-              Passionate about studying <strong class="theme-heading">AI, web development, procedural programming,</strong> and digital productivity. Dedicated to learning cutting-edge tech and engineering real-world projects.
+              Studying <strong class="theme-heading">AI, web development, programming,</strong> and digital productivity. Dedicated to learning cutting-edge tech and engineering real-world projects.
             </p>
 
             <!-- Quick Badges & Jaipur Time -->
@@ -173,7 +172,7 @@
             </div>
 
             <!-- CTA Action Buttons -->
-            <div class="flex flex-wrap items-center gap-4 pt-4">
+            <div class="flex flex-wrap items-center gap-4 pt-3">
               <a href="#skills" class="inline-flex items-center gap-2.5 bg-indigo-600 hover:bg-indigo-500 text-white font-semibold px-6 py-3.5 rounded-xl shadow-lg shadow-indigo-600/30 hover:shadow-indigo-500/50 hover:-translate-y-0.5 transition-all duration-300">
                 <i class="fa-solid fa-layer-group text-sm"></i>
                 <span>Explore My Skills</span>
@@ -188,20 +187,6 @@
                 <i class="fa-regular fa-copy"></i>
                 <span class="text-xs font-mono">Copy Email</span>
               </button>
-            </div>
-
-            <!-- Social Links Quick Bar -->
-            <div class="flex items-center gap-4 pt-2">
-              <span class="text-xs font-mono theme-muted uppercase tracking-wider">Connect:</span>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg theme-card-bg hover:bg-indigo-600 border theme-border flex items-center justify-center theme-subtext hover:text-white transition-all">
-                <i class="fa-brands fa-github text-sm"></i>
-              </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="w-9 h-9 rounded-lg theme-card-bg hover:bg-indigo-600 border theme-border flex items-center justify-center theme-subtext hover:text-white transition-all">
-                <i class="fa-brands fa-linkedin-in text-sm"></i>
-              </a>
-              <a href="mailto:namangarg0700@gmail.com" class="w-9 h-9 rounded-lg theme-card-bg hover:bg-indigo-600 border theme-border flex items-center justify-center theme-subtext hover:text-white transition-all">
-                <i class="fa-solid fa-envelope text-sm"></i>
-              </a>
             </div>
 
           </div>
@@ -274,32 +259,10 @@
 
         </div>
 
-      </div>
-    </section>
-
-    <!-- 2. ABOUT ME SECTION -->
-    <section id="about" class="py-20 md:py-28 relative">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
-        <!-- Section Header -->
-        <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full theme-badge text-xs font-mono text-indigo-400 uppercase tracking-widest">
-            <i class="fa-regular fa-user"></i>
-            <span>Get To Know Me</span>
-          </div>
-          <h2 class="text-3xl sm:text-5xl font-extrabold theme-heading tracking-tight">
-            About <span class="gradient-text">Naman Garg</span>
-          </h2>
-          <p class="theme-subtext text-base sm:text-lg">
-            A curious technologist driven by logic, algorithmic thinking, and building purposeful solutions.
-          </p>
-        </div>
-
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <!-- Narrative & 4 Value Pillars -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center pt-8 border-t theme-border">
           
-          <!-- Left: Narrative & Philosophy -->
           <div class="lg:col-span-7 space-y-6">
-            
             <div class="glass-card p-8 rounded-2xl relative overflow-hidden border-l-4 border-l-indigo-500">
               <div class="text-3xl text-indigo-400/40 mb-3"><i class="fa-solid fa-quote-left"></i></div>
               <blockquote class="text-lg sm:text-xl theme-heading font-medium leading-relaxed italic">
@@ -313,10 +276,6 @@
 
             <p class="theme-subtext leading-relaxed text-base">
               My engineering journey is founded on curiosity and deep-level understanding. Rather than simply using high-level tools as black boxes, I delve into how systems operate under the hood—from understanding memory layout and pointers in <span class="text-cyan-400 font-semibold">C</span> to crafting rapid automation pipelines with <span class="text-amber-400 font-semibold">Python</span>, and developing dynamic modern web user interfaces.
-            </p>
-
-            <p class="theme-subtext leading-relaxed text-base">
-              At <strong class="theme-heading">JECRC University</strong> in Jaipur, I actively bridge the gap between analytical mathematics (Calculus and Linear Algebra) and emerging computational domains like Artificial Intelligence and intelligent systems.
             </p>
 
             <!-- 4 Value Pillar Cards -->
@@ -418,7 +377,7 @@
       </div>
     </section>
 
-    <!-- 3. EDUCATION SECTION -->
+    <!-- 2. EDUCATION SECTION -->
     <section id="education" class="py-20 md:py-28 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -524,7 +483,7 @@
       </div>
     </section>
 
-    <!-- 4. SKILLS SECTION -->
+    <!-- 3. SKILLS SECTION -->
     <section id="skills" class="py-20 md:py-28 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -861,7 +820,7 @@
       </div>
     </section>
 
-    <!-- 5. PROJECTS SECTION -->
+    <!-- 4. PROJECTS SECTION -->
     <section id="projects" class="py-20 md:py-28 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -992,7 +951,7 @@
                   Modern Web Design
                 </span>
                 <div class="flex items-center gap-2">
-                  <a href="#home" class="theme-muted hover:theme-heading transition-colors" title="Live Site">
+                  <a href="#about" class="theme-muted hover:theme-heading transition-colors" title="Live Site">
                     <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
                   </a>
                 </div>
@@ -1001,7 +960,7 @@
                 Modern Animated Portfolio Architecture
               </h3>
               <p class="theme-subtext text-sm leading-relaxed">
-                The very site you are exploring right now. Designed with glassmorphism, responsive HTML5, interactive canvas particle physics, dark/light themes, and zero bulky dependencies.
+                Designed with glassmorphism, responsive HTML5, interactive canvas particle physics, dark/light themes, and cyberpunk section transitions.
               </p>
               <div class="flex flex-wrap gap-2 pt-2">
                 <span class="text-xs font-mono px-2.5 py-1 rounded-md theme-subcard-bg border theme-border theme-subtext">HTML5</span>
@@ -1023,7 +982,7 @@
       </div>
     </section>
 
-    <!-- 6. CONTACT SECTION -->
+    <!-- 5. CONTACT SECTION -->
     <section id="contact" class="py-20 md:py-28 relative">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -1178,7 +1137,7 @@
       </div>
 
       <div>
-        <a href="#home" class="w-10 h-10 rounded-xl theme-card-bg hover:bg-indigo-600 border theme-border theme-heading hover:text-white flex items-center justify-center transition-all" title="Back to Top">
+        <a href="#about" class="w-10 h-10 rounded-xl theme-card-bg hover:bg-indigo-600 border theme-border theme-heading hover:text-white flex items-center justify-center transition-all" title="Back to Top">
           <i class="fa-solid fa-arrow-up text-xs"></i>
         </a>
       </div>
