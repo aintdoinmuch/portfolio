@@ -1,4 +1,4 @@
-# Naman Garg - Personal Portfolio Website
+# Naman Garg - Modern Personal Portfolio Website
 
 A personal portfolio website engineered for **Naman Garg**, B.Tech student at **JECRC University, Jaipur**.
 
